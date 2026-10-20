@@ -1,0 +1,23 @@
+CloseAI IDE Client License
+
+Copyright (c) 2026 unfalltable. All rights reserved.
+
+The developer identified on the CloseAI publisher/vendor page is the licensor
+of this client. An authorized customer may install and use the official
+compiled client under the applicable CloseAI subscription, order or service
+agreement. Installing the IDE client does not itself purchase service access,
+model usage or a managed account. Current service terms are available at
+https://closeai.shop/terms and the privacy policy at https://closeai.shop/privacy.
+
+The client and its source code, documentation, designs and trademarks remain
+proprietary. Access to the compiled client does not grant permission to disclose
+or redistribute private source code. Third-party components remain subject to
+their respective licenses and notices supplied with the client.
+
+The software is provided as available without warranties to the maximum extent
+permitted by law. The applicable CloseAI service agreement and mandatory law
+govern the developer's responsibilities and the customer's rights.
+
+JetBrains, Microsoft and their affiliates are not parties to this client license
+and do not provide the CloseAI service. Support is provided by the CloseAI
+developer through https://closeai.shop/contact.
