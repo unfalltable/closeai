@@ -1,13 +1,16 @@
 # 在 VS Code 和 IntelliJ IDEA 中使用 CloseAI
 
+
+更新于 2026-11-03：GitHub 离线插件为 0.2.2；商店渠道独立发布，本次未更改市场发布或审核状态。
+
 CloseAI 支持浏览器、桌面端、手机，以及 **VS Code 侧栏和 IntelliJ IDEA 工具窗口**。同一账号共用模型账号、额度、项目会话和 Skills；插件直接操作当前 IDE 已授权的本机工程。
 
 ## 安装入口
 
 | 编辑器                             | 安装与状态                                                                                                                                                                                                                                               |
 | ---------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| VS Code 1.99+                      | [Visual Studio Marketplace 安装](https://marketplace.visualstudio.com/items?itemName=unfalltable.closeai-workbench)。扩展 ID：`unfalltable.closeai-workbench`，当前公开版本 **0.2.1**。                                                                  |
-| IntelliJ IDEA 2026.1 系列，带 JCEF | [JetBrains 插件页面](https://plugins.jetbrains.com/plugin/35310-closeai-assistant)。插件已支持，**0.2.0 仍在市场审核中，尚未开放市场安装**；页面公开不代表审核通过。若已取得官方 ZIP，可通过 Settings → Plugins → 齿轮 → Install Plugin from Disk 安装。 |
+| VS Code 1.99+ | [GitHub 0.2.2 VSIX](https://github.com/unfalltable/closeai/releases/download/v0.1.0-beta.19/closeai-workbench-0.2.2.vsix) · [Marketplace](https://marketplace.visualstudio.com/items?itemName=unfalltable.closeai-workbench). 通过扩展菜单 → 从 VSIX 安装。 |
+| IntelliJ IDEA 2026.1 / JCEF | [GitHub 0.2.2 ZIP](https://github.com/unfalltable/closeai/releases/download/v0.1.0-beta.19/closeai-workbench-0.2.2-jetbrains.zip) · [Marketplace](https://plugins.jetbrains.com/plugin/35310-closeai-assistant). Settings → Plugins → Install Plugin from Disk. |
 
 状态核对：2026-10-21。后续以对应市场页面为准。插件无需另购下载许可；使用平台服务、模型账号或采购服务时，以[官网价格和订单](https://closeai.shop/pricing)为准。
 

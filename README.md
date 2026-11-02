@@ -16,8 +16,8 @@
 
 | 入口                                                                                                  | 当前状态                                                              |
 | ----------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------- |
-| [VS Code 插件安装](https://marketplace.visualstudio.com/items?itemName=unfalltable.closeai-workbench) | **0.2.1 已公开可安装**，VS Code 1.99+                                 |
-| [IntelliJ IDEA 插件页面](https://plugins.jetbrains.com/plugin/35310-closeai-assistant)                | **0.2.0 市场审核中**，IDEA 2026.1 系列；尚未开放市场安装              |
+| VS Code 1.99+ | [GitHub 0.2.2 VSIX](https://github.com/unfalltable/closeai/releases/download/v0.1.0-beta.19/closeai-workbench-0.2.2.vsix) · [Marketplace](https://marketplace.visualstudio.com/items?itemName=unfalltable.closeai-workbench) |
+| IntelliJ IDEA 2026.1 / JCEF | [GitHub 0.2.2 ZIP](https://github.com/unfalltable/closeai/releases/download/v0.1.0-beta.19/closeai-workbench-0.2.2-jetbrains.zip) · [Marketplace](https://plugins.jetbrains.com/plugin/35310-closeai-assistant) |
 | [网页工作台](https://closeai.shop)                                                                    | 支持附件与项目 ZIP 上传；单文件最高 **5 GiB**，受账号剩余存储空间限制 |
 
 打开本机工程 → 浏览器登录授权 → 确认当前目录 → 选择模型与权限开始聊天。新用户可前往官网添加或购买模型账号，再返回插件刷新。大目录先在本地打包为 ZIP；已有源码也可通过 IDE 或 Git 直接连接。
@@ -26,34 +26,25 @@
 
 ## 下载：选哪个安装包？
 
-**普通用户从[官网下载页](https://closeai.shop)选择平台即可。** 当前 Windows / Mac 推荐版在官网分发；GitHub Releases 中的 beta.1、beta.2 是历史测试包，不代表官网当前版本。
+GitHub 当前版本：**[0.1.0-beta.19](https://github.com/unfalltable/closeai/releases/tag/v0.1.0-beta.19)**，更新日期 **2026-11-03**。桌面、Android 和 iOS 模拟器包已重新构建；IDE 离线插件为 **0.2.2**。历史 Release 保留归档，新安装请选择下表。
 
-信息核对日期：**2026-10-19**，后续版本以官网下载页为准。
+| 你的设备 | 下载 | 版本与状态 |
+| --- | --- | --- |
+| Windows 10/11，Intel / AMD 64 位 | [Windows `.exe`](https://github.com/unfalltable/closeai/releases/download/v0.1.0-beta.19/CloseAI-0.1.0-beta.19-Windows-x64.exe) | **0.1.0-beta.19**；未代码签名，可能出现 SmartScreen 提示 |
+| Mac，Apple 芯片（M 系列） | [Apple 芯片 `.dmg`](https://github.com/unfalltable/closeai/releases/download/v0.1.0-beta.19/CloseAI-0.1.0-beta.19-macOS-arm64.dmg) / [`.zip`](https://github.com/unfalltable/closeai/releases/download/v0.1.0-beta.19/CloseAI-0.1.0-beta.19-macOS-arm64.zip) | **0.1.0-beta.19**；macOS **13.5+**，已签名、公证、装订并通过 Gatekeeper 校验 |
+| Mac，Intel 处理器 | [Intel `.dmg`](https://github.com/unfalltable/closeai/releases/download/v0.1.0-beta.19/CloseAI-0.1.0-beta.19-macOS-x64.dmg) / [`.zip`](https://github.com/unfalltable/closeai/releases/download/v0.1.0-beta.19/CloseAI-0.1.0-beta.19-macOS-x64.zip) | **0.1.0-beta.19**；macOS **13.5+**，已签名、公证、装订并通过 Gatekeeper 校验 |
+| Linux，Intel / AMD 64 位 | [Debian / Ubuntu `.deb`](https://github.com/unfalltable/closeai/releases/download/v0.1.0-beta.19/CloseAI-0.1.0-beta.19-Linux-amd64.deb) / [`.AppImage`](https://github.com/unfalltable/closeai/releases/download/v0.1.0-beta.19/CloseAI-0.1.0-beta.19-Linux-x86_64.AppImage) / [便携 `.tar.gz`](https://github.com/unfalltable/closeai/releases/download/v0.1.0-beta.19/CloseAI-0.1.0-beta.19-Linux-x86_64.tar.gz) | **0.1.0-beta.19**；需要系统桌面运行库 |
+| Android | [测试 `.apk`](https://github.com/unfalltable/closeai/releases/download/v0.1.0-beta.19/CloseAI-0.1.0-beta.19-Android-debug.apk) | **0.1.0-beta.19**；调试签名，仅供侧载测试，非 Google Play 正式版 |
+| iPhone / iPad | [Safari 网页版 / 添加到主屏幕](https://closeai.shop) | 正式 iOS 发布保持暂停，本次未上传 IPA、TestFlight 或 App Store |
+| iOS 开发者（Mac） | [iOS Simulator `.app.zip`](https://github.com/unfalltable/closeai/releases/download/v0.1.0-beta.19/CloseAI-0.1.0-beta.19-iOS-Simulator.app.zip) | 本次重新构建；仅模拟器，**不能安装到 iPhone / iPad**；原生内部版本 0.1.0（2） |
+| VS Code 1.99+ | [离线 `.vsix`](https://github.com/unfalltable/closeai/releases/download/v0.1.0-beta.19/closeai-workbench-0.2.2.vsix) | **0.2.2**；Extensions → Install from VSIX |
+| IntelliJ IDEA 2026.1（JCEF） | [离线插件 `.zip`](https://github.com/unfalltable/closeai/releases/download/v0.1.0-beta.19/closeai-workbench-0.2.2-jetbrains.zip) | **0.2.2**；Settings → Plugins → Install Plugin from Disk |
+| Linux 服务器 | [安装脚本](https://github.com/unfalltable/closeai/releases/download/v0.1.0-beta.19/install-closeai-server.sh) / [连接器](https://github.com/unfalltable/closeai/releases/download/v0.1.0-beta.19/closeai-server-connector.cjs) | 与本次发布源码同步；脚本固定下载本 Release 的连接器，Node.js 20+ |
+| 浏览器 / PWA | [直接打开工作台](https://closeai.shop) | 无需安装；操作项目时，连接的电脑或服务器需在线 |
 
-| 你的设备                         | 推荐下载                                                                                                                                                                                                                                                                  | 版本与状态                                                                                        |
-| -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
-| Windows 10/11，64 位 Intel / AMD | [Windows 安装程序 `.exe`](https://closeai.shop/desktop-releases/CloseAI%20%E5%8A%A9%E6%89%8B-0.1.0-beta.17-Windows-x64.exe)                                                                                                                                               | **0.1.0-beta.17**；暂未 Windows 代码签名，可能出现 SmartScreen 提示                               |
-| Mac，Apple 芯片（M 系列）        | [Apple 芯片 `.dmg`](https://closeai.shop/desktop-releases/CloseAI%20%E5%8A%A9%E6%89%8B-0.1.0-beta.17-macOS-arm64.dmg)                                                                                                                                                     | **0.1.0-beta.17**；macOS **13.5+**，已签名、公证及装订，通过 Gatekeeper 校验                      |
-| Mac，Intel 处理器                | [Intel `.dmg`](https://closeai.shop/desktop-releases/CloseAI%20%E5%8A%A9%E6%89%8B-0.1.0-beta.17-macOS-x64.dmg)                                                                                                                                                            | **0.1.0-beta.17**；macOS **13.5+**，已签名、公证及装订，通过 Gatekeeper 校验                      |
-| Linux，64 位 Intel / AMD         | [Debian / Ubuntu `.deb`](https://github.com/unfalltable/closeai/releases/download/v0.1.0-beta.2/CloseAI-0.1.0-beta.2-Linux-amd64.deb) / [便携 `.tar.gz`](https://github.com/unfalltable/closeai/releases/download/v0.1.0-beta.2/CloseAI-0.1.0-beta.2-Linux-x86_64.tar.gz) | **0.1.0-beta.2** 历史测试版；未与当前 Windows / Mac 同步发包                                      |
-| Android 7+                       | [测试 `.apk`](https://github.com/unfalltable/closeai/releases/download/v0.1.0-beta.2/CloseAI-0.1.0-beta.2-Android-debug.apk)                                                                                                                                              | **0.1.0-beta.2** 历史测试版；调试签名，仅供侧载测试，非 Google Play 正式版                        |
-| iPhone / iPad                    | [Safari 网页版 / 添加到主屏幕](https://closeai.shop)                                                                                                                                                                                                                      | 原生 **1.0.0（120）** 已提供 TestFlight 内测；仅限已获邀请的测试者，**尚未在 App Store 公开上架** |
-| 浏览器 / PWA                     | [直接打开工作台](https://closeai.shop)                                                                                                                                                                                                                                    | 无需下载安装包；操作项目时，连接的电脑或服务器仍需在线                                            |
+Mac 架构可在 ** → 关于本机** 查看：“芯片”选 Apple 芯片版，“处理器 Intel”选 Intel 版。普通安装优先 `.dmg`。IDE 商店版本独立发布，本次仅更新 GitHub 离线包。
 
-不确定 Mac 架构时，打开 ** → 关于本机**：“芯片”选 Apple 芯片版，“处理器 Intel”选 Intel 版。`arm64` 与 `x64` 不是两个不同功能版本。
-
-### Release 里其他文件是什么？
-
-| 文件                                             | 需不需要下载？                                                     |
-| ------------------------------------------------ | ------------------------------------------------------------------ |
-| `.exe`、`.dmg`、`.deb`、`.apk`                   | 对应平台的安装包，按上表选择一个                                   |
-| Linux `.tar.gz` / 旧版 `.AppImage`               | Linux 的其他打包方式；旧版 AppImage 仅作历史存档                   |
-| Mac `.zip` / 旧版 `.app.zip`                     | 应用压缩包；普通用户优先选当前 `.dmg`，beta.2 的未签名旧包不再推荐 |
-| `.sha256` / `SHA256SUMS-*.txt`                   | 校验文件，用于确认下载完整性，不是安装包                           |
-| `latest-*.json` / `.squirrel.json` 等更新元数据  | 由客户端更新程序使用，不用手动安装                                 |
-| GitHub 自动生成的 **Source code (zip / tar.gz)** | 本公开文档仓库的快照，**不是客户端安装包，也不包含产品源码**       |
-
-官网 Windows / Mac 安装包旁有同名 `.sha256` 文件；Linux 使用所在 Release 的 `SHA256SUMS-closeai-linux.txt`。安装、校验和升级步骤见[安装指南](docs/INSTALLATION.md)。
+每个安装包均有同名 `.sha256`；也可下载 [SHA256SUMS.txt](https://github.com/unfalltable/closeai/releases/download/v0.1.0-beta.19/SHA256SUMS.txt) 和 [release-manifest.json](https://github.com/unfalltable/closeai/releases/download/v0.1.0-beta.19/release-manifest.json) 核对文件、版本和来源。校验与升级步骤见[安装指南](docs/INSTALLATION.md)。桌面自动更新仍使用官网独立更新渠道；本 Release 提供手动下载。GitHub 自动生成的 **Source code (zip / tar.gz)** 只是公开文档仓库快照，**不是客户端安装包，也不含产品源码**。
 
 ## 使用流程
 

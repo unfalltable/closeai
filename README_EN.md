@@ -16,8 +16,8 @@
 
 | Entry                                                                                                  | Current status                                                                              |
 | ------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------- |
-| [VS Code extension](https://marketplace.visualstudio.com/items?itemName=unfalltable.closeai-workbench) | **0.2.1 publicly installable**, VS Code 1.99+                                               |
-| [IntelliJ IDEA listing](https://plugins.jetbrains.com/plugin/35310-closeai-assistant)                  | **0.2.0 under marketplace review**, IDEA 2026.1; not publicly installable yet               |
+| VS Code 1.99+ | [GitHub 0.2.2 VSIX](https://github.com/unfalltable/closeai/releases/download/v0.1.0-beta.19/closeai-workbench-0.2.2.vsix) · [Marketplace](https://marketplace.visualstudio.com/items?itemName=unfalltable.closeai-workbench) |
+| IntelliJ IDEA 2026.1 / JCEF | [GitHub 0.2.2 ZIP](https://github.com/unfalltable/closeai/releases/download/v0.1.0-beta.19/closeai-workbench-0.2.2-jetbrains.zip) · [Marketplace](https://plugins.jetbrains.com/plugin/35310-closeai-assistant) |
 | [Web workspace](https://closeai.shop)                                                                  | File and project ZIP uploads up to **5 GiB per file**, subject to remaining account storage |
 
 Open a local project → authorize sign-in in your browser → confirm the project directory → choose a model and permissions. Add or purchase a model account on the website when needed, then refresh the plugin. ZIP large folders locally, or connect existing code through the IDE or Git.
@@ -26,34 +26,25 @@ Open a local project → authorize sign-in in your browser → confirm the proje
 
 ## Downloads: which package should I choose?
 
-**Start with the [official download page](https://closeai.shop).** Current Windows and Mac packages are hosted on the official website. GitHub releases beta.1 and beta.2 are historical test builds, not the current website release.
+Current GitHub release: **[0.1.0-beta.19](https://github.com/unfalltable/closeai/releases/tag/v0.1.0-beta.19)**, updated **2026-11-03**. Desktop, Android and iOS Simulator artifacts have been rebuilt; offline IDE plugins are **0.2.2**. Previous releases remain archived.
 
-Status checked on **2026-10-19**. Use the official download page for subsequent releases.
+| Device | Download | Version and status |
+| --- | --- | --- |
+| Windows 10/11, Intel / AMD 64-bit | [Windows `.exe`](https://github.com/unfalltable/closeai/releases/download/v0.1.0-beta.19/CloseAI-0.1.0-beta.19-Windows-x64.exe) | **0.1.0-beta.19**; unsigned, so SmartScreen may show a prompt |
+| Mac, Apple silicon | [`.dmg`](https://github.com/unfalltable/closeai/releases/download/v0.1.0-beta.19/CloseAI-0.1.0-beta.19-macOS-arm64.dmg) / [`.zip`](https://github.com/unfalltable/closeai/releases/download/v0.1.0-beta.19/CloseAI-0.1.0-beta.19-macOS-arm64.zip) | **0.1.0-beta.19**, macOS **13.5+**; signed, notarized, stapled and Gatekeeper-verified |
+| Mac, Intel | [`.dmg`](https://github.com/unfalltable/closeai/releases/download/v0.1.0-beta.19/CloseAI-0.1.0-beta.19-macOS-x64.dmg) / [`.zip`](https://github.com/unfalltable/closeai/releases/download/v0.1.0-beta.19/CloseAI-0.1.0-beta.19-macOS-x64.zip) | **0.1.0-beta.19**, macOS **13.5+**; signed, notarized, stapled and Gatekeeper-verified |
+| Linux, Intel / AMD 64-bit | [`.deb`](https://github.com/unfalltable/closeai/releases/download/v0.1.0-beta.19/CloseAI-0.1.0-beta.19-Linux-amd64.deb) / [`.AppImage`](https://github.com/unfalltable/closeai/releases/download/v0.1.0-beta.19/CloseAI-0.1.0-beta.19-Linux-x86_64.AppImage) / [portable `.tar.gz`](https://github.com/unfalltable/closeai/releases/download/v0.1.0-beta.19/CloseAI-0.1.0-beta.19-Linux-x86_64.tar.gz) | **0.1.0-beta.19**; requires system desktop libraries |
+| Android | [Test `.apk`](https://github.com/unfalltable/closeai/releases/download/v0.1.0-beta.19/CloseAI-0.1.0-beta.19-Android-debug.apk) | **0.1.0-beta.19**; debug-signed for sideload testing, not a Google Play release |
+| iPhone / iPad | [Safari web app / Add to Home Screen](https://closeai.shop) | Formal iOS publishing remains paused; no IPA, TestFlight or App Store upload in this release |
+| iOS developers on Mac | [iOS Simulator `.app.zip`](https://github.com/unfalltable/closeai/releases/download/v0.1.0-beta.19/CloseAI-0.1.0-beta.19-iOS-Simulator.app.zip) | Fresh simulator build; **not installable on iPhone / iPad**; native internal version 0.1.0 (2) |
+| VS Code 1.99+ | [Offline `.vsix`](https://github.com/unfalltable/closeai/releases/download/v0.1.0-beta.19/closeai-workbench-0.2.2.vsix) | **0.2.2**; Extensions → Install from VSIX |
+| IntelliJ IDEA 2026.1 with JCEF | [Offline plugin `.zip`](https://github.com/unfalltable/closeai/releases/download/v0.1.0-beta.19/closeai-workbench-0.2.2-jetbrains.zip) | **0.2.2**; Settings → Plugins → Install Plugin from Disk |
+| Linux server | [Installer](https://github.com/unfalltable/closeai/releases/download/v0.1.0-beta.19/install-closeai-server.sh) / [Connector](https://github.com/unfalltable/closeai/releases/download/v0.1.0-beta.19/closeai-server-connector.cjs) | Current source; installer downloads this exact release's connector; Node.js 20+ |
+| Browser / PWA | [Open CloseAI](https://closeai.shop) | No installer; the connected project computer or server must stay online |
 
-| Your device                       | Recommended package                                                                                                                                                                                                                                                           | Version and status                                                                                              |
-| --------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
-| Windows 10/11, Intel / AMD 64-bit | [Windows `.exe`](https://closeai.shop/desktop-releases/CloseAI%20%E5%8A%A9%E6%89%8B-0.1.0-beta.17-Windows-x64.exe)                                                                                                                                                            | **0.1.0-beta.17**; currently unsigned on Windows; SmartScreen may show a warning                                |
-| Mac, Apple silicon (M series)     | [Apple silicon `.dmg`](https://closeai.shop/desktop-releases/CloseAI%20%E5%8A%A9%E6%89%8B-0.1.0-beta.17-macOS-arm64.dmg)                                                                                                                                                      | **0.1.0-beta.17**; macOS **13.5+**; signed, notarized, stapled, and Gatekeeper-verified                         |
-| Mac, Intel processor              | [Intel `.dmg`](https://closeai.shop/desktop-releases/CloseAI%20%E5%8A%A9%E6%89%8B-0.1.0-beta.17-macOS-x64.dmg)                                                                                                                                                                | **0.1.0-beta.17**; macOS **13.5+**; signed, notarized, stapled, and Gatekeeper-verified                         |
-| Linux, Intel / AMD 64-bit         | [Debian / Ubuntu `.deb`](https://github.com/unfalltable/closeai/releases/download/v0.1.0-beta.2/CloseAI-0.1.0-beta.2-Linux-amd64.deb) / [Portable `.tar.gz`](https://github.com/unfalltable/closeai/releases/download/v0.1.0-beta.2/CloseAI-0.1.0-beta.2-Linux-x86_64.tar.gz) | Historical **0.1.0-beta.2** test build; package releases are not synchronized with Windows / Mac                |
-| Android 7+                        | [Test `.apk`](https://github.com/unfalltable/closeai/releases/download/v0.1.0-beta.2/CloseAI-0.1.0-beta.2-Android-debug.apk)                                                                                                                                                  | Historical **0.1.0-beta.2** build; debug signed, for sideload testing; not a Google Play release                |
-| iPhone / iPad                     | [Safari web app / Add to Home Screen](https://closeai.shop)                                                                                                                                                                                                                   | Native **1.0.0 (120)** available to invited TestFlight testers only; **not publicly released on the App Store** |
-| Browser / PWA                     | [Open the workspace](https://closeai.shop)                                                                                                                                                                                                                                    | No installer needed; the connected computer or server must stay online to operate on projects                   |
+Choose the Mac architecture in **Apple menu → About This Mac**. Prefer `.dmg` for normal installation. Marketplace releases are separate; this release updates offline IDE packages only.
 
-On a Mac, open **Apple menu → About This Mac**: choose `arm64` for an Apple chip and `x64` for an Intel processor. Both provide the same application features.
-
-### Other files in a release
-
-| File                                              | Purpose                                                                                                                      |
-| ------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| `.exe`, `.dmg`, `.deb`, `.apk`                    | Installers; choose the one for your platform                                                                                 |
-| Linux `.tar.gz` / historical `.AppImage`          | Alternative Linux package formats; the old AppImage is an archive build                                                      |
-| Mac `.zip` / historical `.app.zip`                | Application archives; use the current `.dmg` for normal installation; the unsigned beta.2 archives are no longer recommended |
-| `.sha256` / `SHA256SUMS-*.txt`                    | Download checksums, not installers                                                                                           |
-| `latest-*.json` / `.squirrel.json`                | Client update metadata; no manual installation needed                                                                        |
-| GitHub's automatic **Source code (zip / tar.gz)** | A snapshot of this public documentation repository, **not an installer or the product source code**                          |
-
-Website Windows / Mac installers have matching `.sha256` files. For Linux, use `SHA256SUMS-closeai-linux.txt` from the same release. See the [installation guide](docs/INSTALLATION.md) for verification, installation, and updates.
+Each package has a matching `.sha256`; [SHA256SUMS.txt](https://github.com/unfalltable/closeai/releases/download/v0.1.0-beta.19/SHA256SUMS.txt) and [release-manifest.json](https://github.com/unfalltable/closeai/releases/download/v0.1.0-beta.19/release-manifest.json) list checksums and provenance. See the [installation guide](docs/INSTALLATION.md). Desktop automatic updates use the separate website channel; this release provides manual downloads. GitHub's automatic **Source code (zip / tar.gz)** files contain this public documentation repository, **not installers or product source**.
 
 ## Getting started
 

@@ -1,11 +1,14 @@
 # CloseAI in VS Code and IntelliJ IDEA
 
+
+Updated 2026-11-03: GitHub offline plugins are 0.2.2. Marketplace publishing is separate and was not changed in this release.
+
 Use CloseAI from the VS Code sidebar or IntelliJ IDEA tool window, alongside web, desktop and mobile. The same account shares model profiles, quotas, project conversations and Skills. IDE tasks use the explicitly authorized current local project.
 
 | Editor                         | Installation and status                                                                                                                                                                                                                                                                                    |
 | ------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| VS Code 1.99+                  | [Install from Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=unfalltable.closeai-workbench). Extension ID: `unfalltable.closeai-workbench`; public version **0.2.1**.                                                                                                      |
-| IntelliJ IDEA 2026.1 with JCEF | [JetBrains listing](https://plugins.jetbrains.com/plugin/35310-closeai-assistant). The plugin is implemented, but **0.2.0 remains under review and is not publicly installable from the marketplace yet**. If you already have the official ZIP, use Settings → Plugins → gear → Install Plugin from Disk. |
+| VS Code 1.99+ | [GitHub 0.2.2 VSIX](https://github.com/unfalltable/closeai/releases/download/v0.1.0-beta.19/closeai-workbench-0.2.2.vsix) · [Marketplace](https://marketplace.visualstudio.com/items?itemName=unfalltable.closeai-workbench). Install via Extensions → Install from VSIX. |
+| IntelliJ IDEA 2026.1 / JCEF | [GitHub 0.2.2 ZIP](https://github.com/unfalltable/closeai/releases/download/v0.1.0-beta.19/closeai-workbench-0.2.2-jetbrains.zip) · [Marketplace](https://plugins.jetbrains.com/plugin/35310-closeai-assistant). Settings → Plugins → Install Plugin from Disk. |
 
 Status checked on 2026-10-21; consult the marketplaces for updates. The client has no separate download license fee. Platform services and model accounts follow the [website prices and order terms](https://closeai.shop/pricing).
 
